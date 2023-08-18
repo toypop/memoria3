@@ -409,26 +409,26 @@ function App(){
       {/* <button onClick={connectMetamask}>Connetti a Metamask</button>
         <br></br> */}
         {/* <p>{account}</p> */}
-      <button onClick={connectContract}>Connettiti al contratto 'Mia memoria'</button>
+      <button className='text-white mt-2 border-[3px] bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]' onClick={connectContract}>Connettiti al contratto Mia memoria</button>
         <br></br>
         {/* <p>{contract.address}</p> */}
         {contract!=='' ?
-        (<button onClick={getData}>Leggi tutte le frasi</button>):
+        (<button className='text-white mt-2 border-[3px] bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]' onClick={getData}>Leggi tutte le frasi</button>):
         (<p></p>)}
         <br></br>
         <p>{readData}</p>
-      <label for='name'>Frase sul diario:</label><br></br>
+      <label className='text-white mt-2 border-[1px] bg-rgb(184, 104, 132); py-0 px-1 mx-4 rounded ' for='name'>Frase sul diario:</label><br></br>
       <textarea type='text' id='message' name='message' cols='100' rows='20' placeholder='Inserisci la frase da ricordare'  onChange={handleChange} value={message}/><br></br>
       {message!=='' && contract!=='' ? (
-      <button onClick={setData}>Salva su blockchain</button>
+      <button className='text-white mt-2 border-[3px] bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]' onClick={setData}>Salva su blockchain</button>
       ):(
         <label for='name'></label>
       )}
         <br></br>      
         {isLoading ? (
-          <p>Sto scrivendo sulla blockchain...</p>
+          <p className='text-white mt-2 border-[1px] bg-rgb(184, 104, 132); py-0 px-1 mx-4 rounded '>Sto scrivendo sulla blockchain...</p>
         ):(
-          <p>{writeData}</p>        
+          <p className='text-white mt-2 border-[1px] bg-rgb(184, 104, 132); py-0 px-1 mx-4 rounded '>{writeData}</p>        
         )}
     </div>
   )
