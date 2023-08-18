@@ -430,6 +430,11 @@ function App(){
         ):(
           <p className='text-white mt-2 border-[1px] bg-rgb(184, 104, 132); py-0 px-1 mx-4 rounded '>{writeData}</p>        
         )}
+        {/* <div className='sm:w-[90%] w-full h-[0.25px] bg-gray-400 mt-5'/> */}
+        <div className='sm:w-[100%] w-full flex justify-between items-center mt-1'>
+            <p className='text-white text-sm text-center'>@Memoria 2023</p>
+            <p className='text-white text-sm text-center'>All rights reserved</p>
+        </div>        
     </div>
   )
 }
