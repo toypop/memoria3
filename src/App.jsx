@@ -417,7 +417,7 @@ function App(){
         (<p></p>)}
         <br></br>
         <p>{readData}</p>
-      <label className='text-white mt-2 border-[1px] bg-rgb(184, 104, 132); py-0 px-1 mx-4 rounded ' for='name'>Frase sul diario:</label><br></br>
+      <label className='text-white mt-2 border-[1px] bg-rgb(184, 104, 132); py-0 px-1 mx-4 rounded ' for='name'>Frase da inserire sul diario:</label><br></br>
       <textarea type='text' id='message' name='message' cols='100' rows='20' placeholder='Inserisci la frase da ricordare'  onChange={handleChange} value={message}/><br></br>
       {message!=='' && contract!=='' ? (
       <button className='text-white mt-2 border-[3px] bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]' onClick={setData}>Salva su blockchain</button>
