@@ -409,7 +409,7 @@ function App(){
       {/* <button onClick={connectMetamask}>Connetti a Metamask</button>
         <br></br> */}
         {/* <p>{account}</p> */}
-      <button className='text-white mt-2 border-[3px] bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]' onClick={connectContract}>Connettiti al contratto Mia memoria</button>
+      <button className='text-white mt-2 border-[4px] bg-[#2952e3] py-2 px-7 mx-4 rounded-2xl cursor-pointer hover:bg-[#2546bd]' onClick={connectContract}>Connettiti al contratto Mia memoria</button>
         <br></br>
         {/* <p>{contract.address}</p> */}
         {contract!=='' ?
